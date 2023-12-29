@@ -1,0 +1,139 @@
+.weather-app {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #2a6dd9;
+  background-image: linear-gradient(to right,rgb(235, 65, 65), rgb(236, 236, 51),rgb(71, 230, 71));
+  padding: 20px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+button {
+  padding: 8px;
+  background-color: #bdef27;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  animation-name: border;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes border{
+  0%{border:2px solid rgb(29, 209, 41);
+    background-color: rgb(230, 46, 95);color:white;}
+  25%{border:2px solid rgb(0, 200, 255);
+    background-color: rgb(46, 132, 230);color:white;}
+  50%{border:2px solid rgb(242, 155, 25);
+  background-color: rgb(46, 230, 46);color:white;}
+  100%{border:2px solid rgb(228, 27, 74);
+  background-color: rgb(224, 18, 235);color: white;}
+}
+button:hover {
+  background-color: #4caf50;
+  cursor: pointer;
+  color: white;
+}
+
+
+.weather-card {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right,skyblue,orange);
+}
+
+.day-header {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.time-forecast {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.time-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  margin-right: 5px;
+  background-color: rgb(15, 39, 134);
+  background-image: linear-gradient(rgb(0, 140, 255),rgb(43, 248, 43));
+  border: 2px solid red;
+  border-radius: 10px;
+  color: white;
+  animation-name: round;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes round {
+  0%{border:2px solid rgb(29, 209, 41);color:black;}
+  25%{border:2px solid rgb(0, 200, 255);color:black;}
+  50%{border:2px solid rgb(242, 155, 25);color:black;}
+  100%{border:2px solid rgb(228, 27, 74);color: black;}
+}
+
+.time-slot.clicked {
+  margin: auto;
+  width: 10vw;
+  height: 12vh;
+  justify-content: center;
+  transform: scale(1.5);
+}
+
+.temperature {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.weather-description {
+  margin: 0px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.time {
+  margin: 0px;
+  margin-top: 1rem;
+}
+
+.currentWeather{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 30vw;
+  height: 35vh;
+  background-image: linear-gradient(to right, rgb(35, 210, 186),rgb(234, 255, 0));
+  border-radius: 10px;
+  border: 2PX solid black;
+  font-weight: bold;
+}
+.currentWeather h3{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  background-image: linear-gradient(rgb(252, 154, 6),rgb(18, 130, 200));
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
