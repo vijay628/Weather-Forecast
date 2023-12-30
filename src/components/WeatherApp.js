@@ -9,6 +9,7 @@ const WeatherApp = () => {
   const [clickedIndex, setClickedIndex] = useState(null);
   const [buttonClicked, setButtonClicked] = useState(false);
 
+  // upadte your API key here
   const apiKey = 'your_api_key_here';
   const apiUrl = `https://api.openweathermap.org/data/2.5/forecast`;
 
