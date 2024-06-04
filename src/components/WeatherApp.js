@@ -10,7 +10,7 @@ const WeatherApp = () => {
   const [buttonClicked, setButtonClicked] = useState(false);
 
   // upadte your API key here
-  const apiKey = 'your_api_key_here';
+  const apiKey = process.env.REACT_APP_API_KEY;
   const apiUrl = `https://api.openweathermap.org/data/2.5/forecast`;
 
   const getDayFromDate = (dateString) => {
